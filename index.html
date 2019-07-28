@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <!-- jQuery関連 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <!-- WebComponents -->
+    <script src="main.js" defer></script>
+    <script src="button-component.js" defer></script>
+    <script src="todo-component.js" defer></script>
+</head>
+<body>
+    <button-component>追加</button-component>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="toDolist"></div>
+    <div id="createToDo" style="display:none;">
+        <label>タイトル</label><br>
+        <input type="text" id="title"><br>
+        <label>詳細</label><br>
+        <textarea rows="4" id='details'></textarea>
+    </div>
+</body>
+</html>
